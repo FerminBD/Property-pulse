@@ -1,4 +1,7 @@
+import Navbar from '@/components/Navbar';
 import '@/assets/styles/global.css';
+
+
 export const metadata = {
     title: 'PropertyPulse | Find The Perfect Rental',
     desccription: 'Find your dream rental property',
@@ -9,7 +12,8 @@ const MainLayout = ({ children }) => {
     return (
         <html>
             <body>
-                <div>{children}</div>
+                <Navbar></Navbar>
+                <main>{children}</main>
             </body>
         </html>
     )
